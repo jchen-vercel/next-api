@@ -44,9 +44,7 @@ function CommentsPage() {
         return (
           <div key={comment.id}>
             {comment.id} {comment.text}
-            <button onclick={() => deleteComment(comment.id)}>
-              Delete Comment
-            </button>
+            <button onclick={() => deleteComment(comment.id)}>Delete</button>
           </div>
         );
       })}
